@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'consts.dart';
+
 const double iconSize = 70;
 const double fontSize = 22;
 
@@ -28,9 +30,7 @@ class GenderCard extends StatelessWidget {
         ),
         Text(
           string,
-          style: TextStyle(
-            fontSize: fontSize,
-          ),
+          style: kTextLabel2Style,
         ),
       ],
     );
