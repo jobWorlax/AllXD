@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:xd/log_in.dart';
-import 'package:xd/register.dart';
-import 'package:xd/user_sign.dart';
+import 'register.dart';
+import 'log_in.dart';
 
 void main() => runApp(KEKW());
 
@@ -15,13 +14,14 @@ class KEKW extends StatelessWidget {
         textTheme: TextTheme(),
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(),
-          contentPadding: EdgeInsets.symmetric(vertical: 12, horizontal: 2),
+          isDense: true,
+          contentPadding: EdgeInsets.symmetric(vertical: 15, horizontal: 13),
         ),
       ),
-      initialRoute: LogIn.ID,
+      initialRoute: Register.ID,
       routes: {
-        LogIn.ID: (context) => LogIn(),
         Register.ID: (context) => Register(),
+        LogIn.ID: (context) => LogIn(),
       },
     );
   }
